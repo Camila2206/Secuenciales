@@ -24,19 +24,19 @@ public class Secuencial_Multiplicativo {
 
         while (aux) {//el bucle while se repetira hasta que el usuario ingrese un numero entero
             try {
-                num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de K para calcular a = 3 + (8 * k)", JOptionPane.ERROR_MESSAGE));
+                num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de K para calcular a = 5 + (8 * k)", JOptionPane.ERROR_MESSAGE));
                 aux = false;
             } catch (NumberFormatException e) {
             }
         }
-        k = num;//una vez comprobado que la variable num almacena unicamente un numero entero a la variable K se le asigna este valo
-        a = 3 + (8 * k);//para obtener el valor del multiplicador 'a' se lo hace a partir de:
-        // 3 + (8 * k) o bien 5 + (8 * k)
+       k = num;//una vez comprobado que la variable num almacena unicamente un numero entero a la variable K se le asigna este valo
+        a = 5 + (8 * k);//para obtener el valor del multiplicador 'a' se lo hace a partir de:
+        //  5 + (8 * k)
 
         //El for permite encontrar el primo maximo de todos los numero, se inicia el bucle a partir de la 
         //variable (m-1)
         //la variable 'primo' sera la que almacene al 'primo maximo'
-        for (int i = (int) (m - 1); i >= 0; i--) {
+        for (int i = (int) (m /4); i >= 0; i--) {
             if (esPrimo(i)) {
                 primo = i;
                 System.out.println("El primo maximo es: " + i);
@@ -49,23 +49,24 @@ public class Secuencial_Multiplicativo {
         x = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el valor de la semilla=x",
                 JOptionPane.INFORMATION_MESSAGE));//se pide ingresar el valor para la semilla
 
-        periodo = x / m;//La variable periodo almacena periodo actual a partir de la 'semilla sobre el modulo' (x/m)
+        periodo = m / 4;//La variable periodo almacena periodo actual a partir de la 'semilla sobre el modulo' (x/m)
 
         System.out.println("n" + "     Xn   " + "    Xn+1   ");
 
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m/4; i++) {
             R = (int) (((a * x)) % m);//la variable R almacena el resulatdos de aplicar la formula para el secuencial multiplicativo
             System.out.println(i + "      " + x + "        " + R);
             x = R;//a la variable de la semilla le asignamos un nuevo valor en este caso R
 
             //en el bucle if se comprueba si el valor de la variable periodo es igual a (R/m)
             //si se cumple empleamos un contador incrementara y sesabra el total de periodos
-            if (periodo == R / m) {
+            if (i == (m / 4)-1) {
                 System.out.println("\n Va " + contador + " periodo(s)");
                 contador++;
             }
         }
     }
+
 
     //Metodo que al ingresar un valor numerico nos retorna true si se ha ingresado un valor primo, caso contrario retornara false
     public static boolean esPrimo(int numero) {

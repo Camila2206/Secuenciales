@@ -28,7 +28,7 @@ La pestaña para el ingreso de 'k' seguira aparecindo hasta que el usuario cumpl
 ![img9](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo4.png) 
 **Resultado**
 Se presenta el primo maximo de entre todos los numero, asi como los numero aleatorios generados (Xn+1).
-![img10](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo5.png) 
+![img10](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo5.png)  
 
 
 

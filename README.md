@@ -23,7 +23,7 @@ m=2^d
 2. Ingresamo en valor para la varible 'k' , que permite calcular el multiplicador a=3+8k. El dato debe ser un entero.
 ![img7](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo2.png) 
 La pestaña para el ingreso de 'k' seguira aparecindo hasta que el usuario cumpla la regla ya mencionada.
-![img8](https://github.com/Camila2206/Secuenciales/blob/master/Mixto3.png) 
+![img8](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo3.png) 
 3. Por ultimo ingresamos el valor para nuestra semilla 'x'
 ![img9](https://github.com/Camila2206/Secuenciales/blob/master/Multiplicativo4.png) 
 **Resultado**
